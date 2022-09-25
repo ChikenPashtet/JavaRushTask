@@ -18,7 +18,7 @@ public class Player {
     private Race race;
     @Enumerated(EnumType.STRING)
     private Profession profession;
-    private int experience;
+    private Integer experience;
 
 
     public Boolean getBanned() {
@@ -31,27 +31,6 @@ public class Player {
 
     private int level;
     private int untilNextLevel;
-//    private Long before;
-//    private Long after;
-//
-//    public Long getBefore() {
-//        return before;
-//    }
-//
-//    public void setBefore(Long before) {
-//        this.before = before;
-//    }
-//
-//    public Long getAfter() {
-//        return after;
-//    }
-//
-//    public void setAfter(Long after) {
-//        this.after = after;
-//    }
-
-
-
     @Temporal(TemporalType.DATE)
     private Date birthday;
     private Boolean banned;
@@ -59,19 +38,7 @@ public class Player {
     public Player() {
     }
 
-    public Player(String name, String title, Race race, Profession profession, int experience, int level, int untilNextLevel, Date birthday, Boolean banned) {
-        this.name = name;
-        this.title = title;
-        this.race = race;
-        this.profession = profession;
-        this.experience = experience;
-        this.level = level;
-        this.untilNextLevel = untilNextLevel;
-        this.birthday = birthday;
-        this.banned = banned;
-    }
-
-    public Player(String name, String title, Race race, Profession profession, Date birthday, boolean banned, int experience) {
+    public Player(String name, String title, Race race, Profession profession, Date birthday, boolean banned, Integer experience) {
         this.name = name;
         this.title = title;
         this.race = race;
@@ -105,7 +72,7 @@ public class Player {
         return profession;
     }
 
-    public int getExperience() {
+    public Integer getExperience() {
         return experience;
     }
 

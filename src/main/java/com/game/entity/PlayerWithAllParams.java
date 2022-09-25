@@ -1,7 +1,5 @@
 package com.game.entity;
 
-import org.springframework.web.bind.annotation.RequestParam;
-
 public class PlayerWithAllParams {
     String name;
     String title;
@@ -15,8 +13,6 @@ public class PlayerWithAllParams {
     Integer minLevel;
     Integer maxLevel;
 
-    public PlayerWithAllParams() {
-    }
 
     public PlayerWithAllParams(String name, String title, Race race, Profession profession, Long after, Long before, Boolean banned, Integer minExperience, Integer maxExperience, Integer minLevel, Integer maxLevel) {
         this.name = name;
@@ -92,31 +88,15 @@ public class PlayerWithAllParams {
         return minExperience;
     }
 
-    public void setMinExperience(Integer minExperience) {
-        this.minExperience = minExperience;
-    }
-
     public Integer getMaxExperience() {
         return maxExperience;
-    }
-
-    public void setMaxExperience(Integer maxExperience) {
-        this.maxExperience = maxExperience;
     }
 
     public Integer getMinLevel() {
         return minLevel;
     }
 
-    public void setMinLevel(Integer minLevel) {
-        this.minLevel = minLevel;
-    }
-
     public Integer getMaxLevel() {
         return maxLevel;
-    }
-
-    public void setMaxLevel(Integer maxLevel) {
-        this.maxLevel = maxLevel;
     }
 }
